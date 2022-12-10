@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Site Icons -->
+     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+     <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="static/css/bootstrap.min.css">
+     <!-- Site CSS -->
+     <link rel="stylesheet" href="static/css/style.css">
+     <!-- Responsive CSS -->
+     <link rel="stylesheet" href="static/css/responsive.css">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="static/css/custom.css">
+ 
+    <link rel="stylesheet" href="static\css\style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+      <!-- Start Main Top -->
+  <div class="main-top">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-md-6 col-sm-12 col-xs-12 ">
+                <div class="text-white d-flex justify-content-between">
+                    <p>Call US :- +11 900 800 100</p>
+                    <p>mail id :- someone@gmail.com</p>
+                    <p>Location : chinnakada, Kollam p.o</p>
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+</div>
+<!-- End Main Top -->
+
+<!-- Start Main Top -->
+<header class="main-header">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+                <a class="navbar-brand" href="index.html"><img src="static/images/logo.png" class="logo" alt=""></a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href=" {% url 'about' %} ">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle " data-toggle="dropdown">CATEGORIES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'fruits' %}">Food & Vegetables</a></li>
+                            <li><a href="{% url 'container' %}">Disposable Plastics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+           
+        </div>
+    </nav>
+    <!-- End Navigation -->
+</header>
+
+    
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+           
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+                <img src = "{{img}}">
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title">{{category}}</h2>
+          <a href = "#" class = "product-link">Ratings</a>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.7(21)</span>
+          </div>
+
+          <div class = "product-price">
+            <p class = "last-price">Old Price: <span>{{org_price}}</span></p>
+            <p class = "new-price">New Price: <span>{{selling_price}}</span></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>about this item: </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+            <ul>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>transparent Containers</span></li>
+              <li>Shipping Area: <span>All over the world</span></li>
+              <li>Shipping Fee: <span>Free</span></li>
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+            
+           <input type="number" name="" id="" class="quantity" placeholder="quantity" value="1" onchange="fun()">
+           <input type="text" name="" id="" class="price p-1" placeholder="{{selling_price}}" value="">
+           <!-- <span class = "new-price border border-2 p-2 " style="border-radius: 40%;">{{selling_price}}</span> -->
+            <button type = "button" class = "btn mt-2">Buy</button>
+          </div>
+
+          <div class = "social-links">
+            <p>Share At: </p>
+            <a href = "#">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="text" class="new" value="{{p}}" hidden>
+
+    <!-- Start Footer  -->
+    <footer>
+      <div class="footer-main">
+          <div class="container">
+      
+      
+              <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                      <div class="footer-widget">
+                          <h4>About Freshshop</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 							
+                      </div>
+                  </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div class="footer-top-box">
+                              <h3>Business Time</h3>
+                              <ul class="list-time">
+                                  <li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                      <div class="footer-link-contact">
+                          <h4>Contact Us</h4>
+                          <ul>
+                              <li>
+                                  <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
+                              </li>
+                              <li>
+                                  <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
+                              </li>
+                              <li>
+                                  <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <hr>
+          </div>
+      </div>
+  </footer>
+  <!-- End Footer  -->
+
+  <!-- Start copyright  -->
+  <div class="footer-copyright">
+      <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
+          <a href="https://html.design/">html design</a></p>
+  </div>
+  <!-- End copyright  -->
+
+  <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+  <!-- ALL JS FILES -->
+  <script src="static/js/jquery-3.2.1.min.js"></script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <!-- ALL PLUGINS -->
+  <script src="static/js/jquery.superslides.min.js"></script>
+  <script src="static/js/bootstrap-select.js"></script>
+  <script src="static/js/inewsticker.js"></script>
+  <script src="static/js/bootsnav.js."></script>
+  <script src="static/js/images-loded.min.js"></script>
+  <script src="static/js/isotope.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/baguetteBox.min.js"></script>
+  <script src="static/js/form-validator.min.js"></script>
+  <script src="static/js/contact-form-script.js"></script>
+  <script src="static/js/custom.js"></script>
+  <script>
+    function fun(){
+      $(document).ready(function(){
+      price=$('.new').val()    
+      quantity=$('.quantity').val()    
+      res=price*quantity
+      r='$'+res
+      $('.price').val(r)
+    })
+    }
+  
+    
+  </script>
+    <script>
+      const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+    </script>
+  </body>
+</html>
