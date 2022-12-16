@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Basic -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,18 +61,18 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                    <a class="navbar-brand" href="index.html"><img src="static/images/company_logo.png"  class="logo" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="static/images/company_logo.png" class="logo"   alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                        <li class="nav-item "><a class="nav-link" href="{% url 'home' %}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href=" {% url 'about' %} ">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
                         <li class="dropdown">
-                            <a class="nav-link dropdown-toggle " data-toggle="dropdown">CATEGORIES</a>
+                            <a  class="nav-link dropdown-toggle " data-toggle="dropdown">CATEGORIES</a>
                             <ul class="dropdown-menu">
 								<li><a href="{% url 'fruits' %}">Food & Vegetables</a></li>
 								<li><a href="{% url 'container' %}">Disposable Plastics</a></li>
@@ -93,150 +94,26 @@
 
 
 
-    <!-- Start Slider -->
-    <div id="slides-shop" class="cover-slides">
-        <ul class="slides-container">
-            <li class="text-center">
-                <img src="static/images/containers.jpeg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Welcome To <br> AL-BESRAWI TRADING</strong></h1>
-                            <p class="m-b-40">Count on us for your agricultural shipments, Services designed to maximize quality and shelf-life </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="text-center">
-                <img src="static/images/veg.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Welcome To <br> AL-BESRAWI TRADING</strong></h1>
-                            <p class="m-b-40">Count on us for your agricultural shipments, Services designed to maximize quality and shelf-life </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="text-center">
-                <img src="static/images/fruits.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Welcome To <br> AL-BESRAWI TRADING</strong></h1>
-                            <p class="m-b-40">Count on us for your agricultural shipments, Services designed to maximize quality and shelf-life </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="text-center">
-                <img src="static/images/fruits2.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Welcome To <br> AL-BESRAWI TRADING</strong></h1>
-                            <p class="m-b-40">Count on us for your agricultural shipments, Services designed to maximize quality and shelf-life </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="slides-navigation">
-            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    <!-- End Slider -->
-   <!-- Start Blog  -->
-    <div class="latest-blog">
+     <!-- Start Products  -->
+     <div class="products-box">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-all text-center">
-                        <h1>OUR SERVICES</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center"  >
-                <div class="col-md-12 col-lg-4 col-xl-4 " >
-                    <div class="blog-box ">
-                        <div class="blog-img d-flex justify-content-center">
-                            <img class="img-fluid" src="static\images\vegetables.jpeg" alt=""  />
-                        </div>
-                        <div class="blog-content ">
-                            <div class="title-blog mt-1" >
-                                <h3 class="text-center">WE PROVIDE YOU WITH FRESH VEGETABLES</h3>
-                                <p align="justify" class="pb-1">We provide you with the best vegetables in Oman wholesale and retail, vegetable play an important role in human nutrition. Most are low in fat and calories but are bulky and filling. They supply dietary fibre and are important sources of essential vitamins, minerals, and trace elements . Particularly important are the antioxidant vitamins A, C, and E. When vegetables are included in the diet, there is found to be a reduction in the incidence of cancer, stroke, cardiovascular disease, and other chronic ailments. Research has shown that, compared with individuals who eat less than three servings of fruits and vegetables each day, those that eat more than five servings have an approximately twenty percent lower risk of developing coronary heart disease or stroke The nutritional content of vegetables varies considerably; some contain useful amounts of protein though generally they contain little fat, and varying proportions of vitamins such as vitamin A, vitamin K, and vitamin B6; pro vitamins; dietary minerals; and carbohydrate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-12 col-lg-4 col-xl-4">
-                    <div class="blog-box">
-                        <div class="blog-img d-flex justify-content-center">
-                            <img class="img-fluid" src="static\images\fruitsbanner.jpeg"   alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <div class="title-blog mt-2 ">
-                                <h3 class="text-center">WE PROVIDE YOU WITH FRESH FRUITS</h3>
-                                <p align="justify">Muscat is a big market for fresh fruits also. The demand is stable but there is a lot of competition. There is an increasing demand for avocados, blueberries, mangoes and sweet potatoes. Health, flavor and convenience all influence the demand for fresh fruit and vegetables in Oman. Tougher requirements put pressure on you as an exporter. You need to pay attention to sustainability, good use of water resources and reducing plastic packaging. Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. Vegetables are good sources of minerals, especially calcium and iron, and vitamins, principally A and C . A diet rich in vegetables and fruits can lower blood pressure, reduce the risk of heart disease and stroke, prevent some types of cancer , lower risk of eye and digestive problems, and have a positive effect upon blood sugar, which can help keep appetite in check . We understand its importance and will provide best quality fruits for you.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <br><br><br><br>
-                </div>
-                <div class=" col-md-12 col-lg-4 col-xl-4 ">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img class="img-fluid" src="static\images\containerset2.jpeg" style="width:100%;"  alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <div class="title-blog">
-                                <h3 class="text-center">WE PROVIDE YOU WITH TRANSPARENT-LID CONTAINERS</h3>
-                                <p align="justify" class="mb-5 pb-5">We promote product visualization with clear product packaging , consumers can see the product's size, shape, colour, and intricate details. While some packaging may gloss over a product's finer features, clear packaging allows the consumer to see all the little details for themselves. Not only are clear plastic containers easy to use, clean and store. You also do not have to worry about labelling the containers in order to be able to identify their contents. "Premium feeling” gives more added value to the packaging of a product Transparency makes trust possible, and trust is an essential foundation for any long-lasting relationship. When a brand builds good customer relationships, it can build loyalty with its customers. A study from Label Insights shows that 94% of respondents will stay loyal to a transparent brand.</p>
-                            <br>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Blog  -->
-
-    <!-- Start Products  -->
-    <div class="products-box food" >
-         <div class="container-fluid">
-        <h1 class="h1 mt-3 pt-3 text-center" style="color:black">CATEGORIES</h1>
-    </div>
-        <div class="container">
-            <div class="row">
-
                 <div class="col-lg-12">
                     <div class="title-all text-center">
                         <h1>Fruits & Vegetables</h1>
+                        <p>We provide you best quality fruits and vegetables with assured price value</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="special-menu text-center">
-                        <div class="button-group filter-button-group">
-                            <button class="active" data-filter="*">All</button>
-                            <button data-filter=".vegetable ,.containers,.Spoons">Vegetables</button>
-                            <button data-filter=".fruit,.containers,.Spoons">Fruits</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <div class="row special-list">
                 <div class="col-lg-3 col-md-6 special-grid fruit">
                     <div class="products-single fix">
                         <div class="box-img-hover border border-1" style="height: 18rem;">
+                            <div class="type-lb">
 
+                            </div>
                             <img src="static\images\cherry-tomato.jpeg" class="" alt="Image">
                             <div class="mask-icon">
                                 <ul>
@@ -257,17 +134,18 @@
                 <div class="col-lg-3 col-md-6 special-grid vegetable">
                     <div class="products-single fix">
                         <div class="box-img-hover border border-1" style="height: 18rem; ">
+                            <div class="type-lb">
 
+                            </div>
                             <img src="static/images/broccoli.jpeg" class="" alt="Image" height="240px">
                             <div class="mask-icon">
                                 <ul>
-
-                                    <li><a href="#"  data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
                             </div>
                             <div class="why-text">
-                                <h2 class="text-center">Broccoli</h2>
+                                <h2>Broccoli</h2>
                             </div>
                         </div>
 
@@ -277,13 +155,14 @@
                 <div class="col-lg-3 col-md-6 special-grid vegetable">
                     <div class="products-single fix">
                         <div class="box-img-hover border border-1" style="height: 18rem;">
+                            <div class="type-lb">
 
+                            </div>
                             <img src="static\images\yellow-capsicum.jpeg" class="" alt="Image">
                             <div class="mask-icon">
                                 <ul>
-
-                                    <li><a href="#"  data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
                             </div>
                             <div class="why-text">
@@ -297,13 +176,14 @@
                 <div class="col-lg-3 col-md-6 special-grid fruit">
                     <div class="products-single fix">
                         <div class="box-img-hover border border-1" style="height: 18rem;">
+                            <div class="type-lb">
 
-                            <img src="static\images\honey-melon.jpeg" class="" alt="Image" height="82%">
+                            </div>
+                            <img src="static\images\honey-melon.jpeg" class="" alt="Image">
                             <div class="mask-icon">
                                 <ul>
-
-                                    <li><a href="#"  data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
@@ -318,14 +198,16 @@
                 <div class="col-lg-3 col-md-6 special-grid vegetable">
                     <div class="products-single fix">
                         <div class="box-img-hover border border-1" style="height: 18rem;">
+                            <div class="type-lb">
 
+                            </div>
                             <img src="static/images/iceberg.jpeg" class="" alt="Image">
                             <div class="mask-icon">
                                 <ul>
-
-                                    <li><a href="#"  data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
+
                             </div>
                             <div class="why-text">
                                 <h2 class="text-center">Iceberg</h2>
@@ -338,13 +220,14 @@
                 <div class="col-lg-3 col-md-6 special-grid vegetable">
                     <div class="products-single fix">
                         <div class="box-img-hover border border-1" style="height: 18rem;">
+                            <div class="type-lb">
 
+                            </div>
                             <img src="static\images\red-capsicum1.jpeg" class="" alt="Image" height="80%">
                             <div class="mask-icon">
                                 <ul>
-
-                                    <li><a href="#"  data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
                             </div>
                             <div class="why-text">
@@ -358,18 +241,19 @@
                 <div class="col-lg-3 col-md-6 special-grid fruit">
                     <div class="products-single fix">
                         <div class="box-img-hover border border-1" style="height: 18rem;">
+                            <div class="type-lb">
 
-                            <img src="static/images/rock-melon.jpeg" class="" alt="Image" height="80%">
+                            </div>
+                            <img src="static/images/rock-melon.jpeg" class="" alt="Image">
                             <div class="mask-icon">
                                 <ul>
-
-                                    <li><a href="#"  data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Rock Melon</h2>
+                                <h2 class="text-center">Rock Melon</h2>
                             </div>
                         </div>
 
@@ -379,17 +263,19 @@
                 <div class="col-lg-3 col-md-6 special-grid fruit">
                     <div class="products-single fix">
                         <div class="box-img-hover border border-1" style="height: 18rem;">
+                            <div class="type-lb">
 
+                            </div>
                             <img src="static/images/apricot.jpeg" class="" alt="Image">
                             <div class="mask-icon">
-<ul>
-
-                                    <li><a href="#"  data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"></a></li>
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
+
                             </div>
                             <div class="why-text">
-                                <h2>Apricot</h2>
+                                <h2 class="text-center">Apricot</h2>
                             </div>
                         </div>
 
@@ -401,348 +287,278 @@
     </div>
     <!-- End Products  -->
        <!-- Start Products  -->
-       <div class="products-box containerset">
+       <div class="products-box">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-all text-center">
                         <h1>Disposable Plastic Products</h1>
+                        <p>We provide you best quality products for best assured price.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="special-menu text-center">
-                        <div class="button-group filter-button-group">
-                            <button class="active" data-filter="*">All</button>
-                            <button data-filter=".containers,.vegetable,.fruit">Food Packaging Boxes</button>
-                            <button data-filter=".spoon,.vegetable,.fruit">Spoons & Forks</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <div class="row special-list">
                 <div class="col-lg-3 col-md-6 special-grid containers">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$800">
-                                <input class="sale product1" name="sale_price" hidden value="$600">
-                                <input class="sale product1" name="img" hidden value="static\images\container1.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="Container">
 
                             </div>
-                            <img src="static\images\container1.jpeg" class="product1"  alt="Image" height="240px" width="100%">
+                            <img src="static\images\container1.jpeg"  alt="Image" height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
 
-                                        <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"></a></li>
                                 </ul>
                             </div>
                             <div class="why-text">
                                 <h2 class="text-center">Trasparent Container-1</h2>
                             </div>
                         </div>
-                    </form>
+
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid containers">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
-                            <div class="box-img-hover border border-1" style="height: 18rem; ">
-                                <div class="type-lb">
-                                    <input class="sale product1" name="org_price" hidden value="$1000">
-                                    <input class="sale product1" name="sale_price" hidden value="$800">
-                                    <input class="sale product1" name="img" hidden value="static\images\container2.jpeg">
-                                    <input class="sale product1" name="product_name" hidden value="container">
+                        <div class="box-img-hover border border-1" style="height: 18rem; ">
+                            <div class="type-lb">
 
-                                </div>
-                                <img src="static/images/container2.jpeg" class="" alt="Image"  height="240px" width="100%">
-                                <div class="mask-icon">
-                                    <ul>
-                                        <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
-                                    </ul>
-                                </div>
-                                <div class="why-text">
-                                    <h2>Trasparent Container-2</h2>
-                                </div>
                             </div>
-                      </form>
+                            <img src="static/images/container2.jpeg" class="" alt="Image"  height="240px" width="100%">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
+                                </ul>
+                            </div>
+                            <div class="why-text">
+                                <h2 class="text-center">Trasparent Container-2</h2>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid spoon">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$600">
-                                <input class="sale product1" name="sale_price" hidden value="$300">
-                                <input class="sale product1" name="img" hidden value="static\images\spoonset3.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="spoon set">
 
                             </div>
                             <img src="static\images\spoonset3.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
                             </div>
                             <div class="why-text">
-                                <h2>Spoonset-1</h2>
+                                <h2 class="text-center">Spoonset-1</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid containers">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$1000">
-                                <input class="sale product1" name="sale_price" hidden value="$800">
-                                <input class="sale product1" name="img" hidden value="static\images\container3.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="container">
 
                             </div>
                             <img src="static\images\container3.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Trasparent Container-3</h2>
+                                <h2 class="text-center">Trasparent Container-3</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid spoon">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$500">
-                                <input class="sale product1" name="sale_price" hidden value="$300">
-                                <input class="sale product1" name="img" hidden value="static\images\spoonset2.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="spoon set">
 
                             </div>
                             <img src="static/images/spoonset2.jpeg" class="" alt="Image" height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
-
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Spoonset-2</h2>
+                                <h2 class="text-center">Spoonset-2</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid containers">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$1100">
-                                <input class="sale product1" name="sale_price" hidden value="$900">
-                                <input class="sale product1" name="img" hidden value="static\images\container4.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="container">
 
                             </div>
                             <img src="static\images\container4.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
                             </div>
                             <div class="why-text">
-                                <h2>Trasparent Container-4</h2>
+                                <h2 class="text-center">Trasparent Container-4</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid spoon">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$300">
-                                <input class="sale product1" name="sale_price" hidden value="$200">
-                                <input class="sale product1" name="img" hidden value="static\images\spoonset4.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="spoon set">
 
                             </div>
                             <img src="static/images/spoonset4.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Spoonset-3</h2>
+                                <h2 class="text-center">Spoonset-3</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid containers">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$1000">
-                                <input class="sale product1" name="sale_price" hidden value="$800">
-                                <input class="sale product1" name="img" hidden value="static\images\container5.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="container">
 
                             </div>
                             <img src="static/images/container5.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
-
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Trasparent Container-5</h2>
+                                <h2 class="text-center">Trasparent Container-5</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid containers">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$1000">
-                                <input class="sale product1" name="sale_price" hidden value="$850">
-                                <input class="sale product1" name="img" hidden value="static\images\container6.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="container">
 
                             </div>
                             <img src="static/images/container6.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Trasparent Container-6</h2>
+                                <h2 class="text-center">Trasparent Container-6</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid containers">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$900">
-                                <input class="sale product1" name="sale_price" hidden value="$700">
-                                <input class="sale product1" name="img" hidden value="static\images\container7.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="container">
 
                             </div>
                             <img src="static/images/container7.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Trasparent Container-7</h2>
+                                <h2 class="text-center">Trasparent Container-7</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid containers">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$900">
-                                <input class="sale product1" name="sale_price" hidden value="$650">
-                                <input class="sale product1" name="img" hidden value="static\images\container8.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="container">
 
                             </div>
                             <img src="static/images/container8.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Trasparent Container-8</h2>
+                                <h2 class="text-center">Trasparent Container-8</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 special-grid spoon">
                     <div class="products-single fix">
-                        <form action="{% url 'product' %}" enctype="multipart/form-data" method="post">
-                            {% csrf_token %}
                         <div class="box-img-hover border border-1" style="height: 18rem;">
                             <div class="type-lb">
-                                <input class="sale product1" name="org_price" hidden value="$300">
-                                <input class="sale product1" name="sale_price" hidden value="$100">
-                                <input class="sale product1" name="img" hidden value="static\images\spoonset1.jpeg">
-                                <input class="sale product1" name="product_name" hidden value="spoon set">
 
                             </div>
                             <img src="static/images/spoonset1.jpeg" class="" alt="Image"  height="240px" width="100%">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><input style="background-color:#b0b432 ;border:none;color:white;" type="submit" data-toggle="tooltip" data-placement="right" title="view"  value="view"></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"></a></li>
                                 </ul>
 
                             </div>
                             <div class="why-text">
-                                <h2>Spoonset-4</h2>
+                                <h2 class="text-center">Spoonset-4</h2>
                             </div>
                         </div>
-                    </form>
+
                     </div>
                 </div>
 
@@ -750,6 +566,94 @@
         </div>
     </div>
     <!-- End Products  -->
+{% comment %}
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-01.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-02.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-03.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-04.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-06.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-07.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-08.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-09.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="static/images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  --> {% endcomment %}
+
 
     <!-- Start Footer  -->
     <footer>
@@ -761,9 +665,7 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>About AL BESRAWI TRADING</h4>
-                                                      <p>Al Besrawi Trade is an importer company based in Oman The company deals in the import of various products such as vegetables, fruits and transparent lid containers and disposable plastic products.We manufacture these as per international industrial standards. Our registered office address is in Oman.</p>
-
-							
+                            <p>Al Besrawi Trade is an importer company based in Oman The company deals in the import of various products such as vegetables, fruits and transparent lid containers and disposable plastic products.We manufacture these as per international industrial standards. Our registered office address is in Oman.</p>
                         </div>
                     </div>
                         <div class="col-lg-4 col-md-12 col-sm-12">
